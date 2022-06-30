@@ -1,99 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="/Users/mandarin/Documents/GitHub/CSS/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Friends - Mandariner</title>
+    <title>Friends - BlueberryTalk</title>
 </head>
-  <body>
+<body>
     <div class="status-bar">
         <div class="status-bar__column">
             <span>No Service</span>
             <i class="fas fa-wifi"></i>
         </div>
+
         <div class="status-bar__column">
-            <span>22:47</span>
+            <span>18:49</span>
         </div>
+
         <div class="status-bar__column">
-            <span>125%</span>
+            <span>73%</span>
             <i class="fas fa-battery-full fa-lg"></i>
             <i class="fas fa-bolt"></i>
         </div>
     </div>
-   
+
     <header class="screen-header">
         <h1 class="screen-header__title">Friends</h1>
         <div class="screen-header__icons">
-            <span><i class="fas fa-search fa-lg"></i></span>
+            <span> <i class="fas fa-search fa-lg"></i></span>
             <span><i class="fas fa-music fa-lg"></i></span>
             <span><i class="fas fa-cog fa-lg"></i></span>
         </div>
     </header>
 
     <a id="friends-display-link">
-        <i class="fas fa-info-circle"></i> Friends'  Names  Display
+        <i class="fas fa-info-circle"></i> Friends Names Display 
         <i class="fas fa-chevron-right fa-sm"></i>
     </a>
 
-    <main class="friends-screen">
+    <main class="friends-screen">      
         <div class="user-component">
             <div class="user-component__column">
-                <img src="https://avatars.githubusercontent.com/u/105625996?v=4" 
+                <img src="https://5.imimg.com/data5/SELLER/Default/2021/7/SX/OH/ZM/14274066/natural-frozen-blueberry-500x500.jpg"
                 class="user-component__avatar user-component__avatar--xl" />
                 <div class="user-component__text">
-                    <h4 class="user-component__title">tigerlily</h4>
-                    <!-- <h6 class="user-component__subtitle">Please check your e-mail or phone.</h6> -->
+                    <h3 class="user-component__title">Blueberry</h3>
+                    <h6 class="user-component__subtitle">
+                        It is low in calories but high in fiber, vitamin C and vitamin K.
+                    </h6>
                 </div>
-        </div>
-        <div class="friends-screen__channel">
-            <div class="friends_screen__channel-header">
-                <span>Channel</span>
-                <i class="fas fa-chevron-up fa-sm"></i>
             </div>
-            <div class="user-component">
-                <div class="user-component__column">
-                    <img src="https://avatars.githubusercontent.com/u/105625996?v=4" 
-                    class="user-component__avatar user-component__avatar--sm" />
-                    <div class="user-component__text">
-                        <h4 class="user-component__title">Channel</h4>
-                        <span>2 </span>
+            <div class="user-component__column"></div>
+            </div>
+            <div class="friends-screen__channel">
+                <div class="friends-screen__channel-header">
+                    <span>Channel</span>
+                    <i class="fas fa-chevron-up fa-sm"></i>
+                </div>
+                <div class="user-component">
+                    <div class="user-component__column">
+                        <img src="data:image/png;base64,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"
+                        class="user-component__avatar user-component__avatar--sm" />
+                        <div class="user-component__text">
+                            <h3 class="user-component__title--not-bold">Channel</h3>
+                        </div>
+                    </div>
+                    <div class="user-component__column">
+                        <div>
+                            <span>2</span>
+                            <i class="fas fa-chevron-right fa-sm"></i>
+                        </div>
+                       
+                    </div>
+                    </div>
             </div>
         </div>
     </main>
-
-    
 
     <nav class="nav">
         <ul class="nav__list">
             <li class="nav__btn">
                 <a class="nav__link" href="friends.html">
-                    <i class="far fa-user fa-2x"></i>
+                    <i class="fas fa-user fa-2x"></i>
                 </a>
             </li>
             <li class="nav__btn">
-                <a class="nav__link" href="#">
-                    <span class="nav__notification">1</span>
-                    <i class="far fa-comment-alt fa-2x"></i>
+                <a class="nav__link" href="chats.html">
+                    <span class="nav__notification badge">3</span>
+                    <i class="far fa-comment fa-2x"></i>
                 </a>
             </li>
             <li class="nav__btn">
-                <a class="nav__link" href="#">
+                <a class="nav__link" href="find.html">
                     <i class="fas fa-search fa-2x"></i>
                 </a>
             </li>
             <li class="nav__btn">
-                <a class="nav__link" href="#">
-                    <span class="nav__circle"></span>
+                <a class="nav__link" href="more.html">
+                    <span class="nav__ellipsis"></span>
                     <i class="fas fa-ellipsis-h fa-2x"></i>
                 </a>
             </li>
         </ul>
     </nav>
-
-    <script src="https://kit.fontawesome.com/6478f529f2.js"
-    crossorigin="anonymous">
-    </script>
-  </body>
+    <div class="splash-screen">
+        <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNzUycHQiIGhlaWdodD0iNzUycHQiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDc1MiA3NTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiA8Zz4KICA8cGF0aCBkPSJtMzc2IDIyNC45YzM0Ljg4My0yMi45OTIgNzcuMzU1LTMxLjQ4OCAxMTguNC0yMy42OC0wLjAwMzkwNy0xMC45MzQtMS4zOTg0LTIxLjgyNC00LjE0NDUtMzIuNDEtMC42MzY3Mi0yLjU5MzgtMS45NjA5LTQuOTY4OC0zLjgzOTgtNi44NzExLTEuODc1LTEuOTAyMy00LjIzMDUtMy4yNjE3LTYuODE2NC0zLjkyOTctNDQuNjMzLTExLjM1Mi05MS45NDkgMS41NzAzLTEyNC42MSAzNC4wMzUtNC44ODI4IDQuOTQ1My05LjMzNTkgMTAuMjg5LTEzLjMxNiAxNS45ODQgMTIuMDc0IDQuMjM4MyAyMy42MDIgOS45MDIzIDM0LjMzMiAxNi44NzF6Ii8+CiAgPHBhdGggZD0ibTMxMS4zMyAyMDAuMzNjNi4zNDc3LTEwLjcyNyAxMy45NDktMjAuNjY0IDIyLjY0NS0yOS41OTggMy42NjgtMy42NDg0IDcuNTE5NS03LjEwNTUgMTEuNTQzLTEwLjM1OS0yMy42NDgtNy43NDIyLTQ5LjAxMi04LjU2MjUtNzMuMTA5LTIuMzY3Mi0yLjU4NTkgMC42Njc5Ny00Ljk0MTQgMi4wMjczLTYuODIwMyAzLjkyOTctMS44NzUgMS45MDIzLTMuMTk5MiA0LjI3NzMtMy44MzU5IDYuODcxMS0yLjc1IDEwLjU4Ni00LjE0MDYgMjEuNDc3LTQuMTQ0NSAzMi40MSA5Ljc1NzgtMS44NDM4IDE5LjY2OC0yLjc4NTIgMjkuNTk4LTIuODA4NiA4LjA3ODEgMC4wNDI5NjkgMTYuMTQxIDAuNjg3NSAyNC4xMjUgMS45MjE5eiIvPgogIDxwYXRoIGQ9Im0zNzYgMzAyYzEwLjY4IDAuMDQ2ODc1IDIxLjMzMiAxLjA4NTkgMzEuODIgMy4xMDk0LTE3LjU1MS0zNy44NC01MS44MTYtNjUuMjctOTIuNTc0LTc0LjExNy00MC43NjItOC44NDc3LTgzLjMxNiAxLjkxMDItMTE0Ljk4IDI5LjA2Ni0zMS42NTYgMjcuMTU2LTQ4Ljc2NiA2Ny41NzQtNDYuMjI3IDEwOS4yMSAyLjU0MyA0MS42MzMgMjQuNDM4IDc5LjY3MiA1OS4xNjQgMTAyLjc4di03LjI1LTAuMDAzOTA2YzAtNDMuMTc2IDE3LjE1Mi04NC41ODIgNDcuNjg0LTExNS4xMSAzMC41MjctMzAuNTI3IDcxLjkzNC00Ny42OCAxMTUuMTEtNDcuNjh6Ii8+CiAgPHBhdGggZD0ibTQ2NC44IDIyOC4wMWMtMjIuNDY1IDAuMDE5NTMyLTQ0LjU1OSA1LjcyMjctNjQuMjI3IDE2LjU3NCAyMC40NTMgMTkuODk1IDM1LjM0OCA0NC43OTMgNDMuMjExIDcyLjIyMyAyOC4zNDggMTIuOTggNTIuMzY3IDMzLjgyOCA2OS4yMTEgNjAuMDYyIDE2Ljg0NCAyNi4yMzQgMjUuODAxIDU2Ljc1NCAyNS44MDEgODcuOTN2Ny4yNSAwLjAwMzkwNmMzMS45NTMtMjEuMjg5IDUzLjE2OC01NS4zMjggNTguMTk5LTkzLjM5NSA1LjAzMTItMzguMDYyLTYuNjA1NS03Ni40NDUtMzEuOTMtMTA1LjMtMjUuMzI0LTI4Ljg1OS02MS44NzEtNDUuMzg3LTEwMC4yNy00NS4zNDR6Ii8+CiAgPHBhdGggZD0ibTM5OC4yIDQ2NC44YzAgMTIuMjYyLTkuOTM3NSAyMi4xOTktMjIuMTk5IDIyLjE5OS0xMi4yNTggMC0yMi4xOTktOS45Mzc1LTIyLjE5OS0yMi4xOTkgMC0xMi4yNTggOS45NDE0LTIyLjE5OSAyMi4xOTktMjIuMTk5IDEyLjI2MiAwIDIyLjE5OSA5Ljk0MTQgMjIuMTk5IDIyLjE5OSIvPgogIDxwYXRoIGQ9Im0zNzYgMzMxLjZjLTM1LjMyNCAwLTY5LjIwMyAxNC4wMzUtOTQuMTggMzkuMDEyLTI0Ljk4IDI0Ljk4LTM5LjAxMiA1OC44NTktMzkuMDEyIDk0LjE4NCAwIDM1LjMyOCAxNC4wMzEgNjkuMjAzIDM5LjAxMiA5NC4xODQgMjQuOTc3IDI0Ljk4IDU4Ljg1NSAzOS4wMTIgOTQuMTggMzkuMDEyIDM1LjMyOCAwIDY5LjIwNy0xNC4wMzEgOTQuMTg0LTM5LjAxMiAyNC45OC0yNC45OCAzOS4wMTItNTguODU1IDM5LjAxMi05NC4xODQgMC0zNS4zMjQtMTQuMDMxLTY5LjIwMy0zOS4wMTItOTQuMTg0LTI0Ljk3Ny0yNC45NzctNTguODU1LTM5LjAxMi05NC4xODQtMzkuMDEyem0wIDE4NC45OXYwLjAwMzkwNmMtMTMuNzM0IDAtMjYuOTEtNS40NjA5LTM2LjYyNS0xNS4xNzItOS43MTQ4LTkuNzE0OC0xNS4xNzItMjIuODkxLTE1LjE3Mi0zNi42MjlzNS40NTctMjYuOTEgMTUuMTcyLTM2LjYyNSAyMi44OTEtMTUuMTcyIDM2LjYyNS0xNS4xNzJjMTMuNzM4IDAgMjYuOTE0IDUuNDU3IDM2LjYyOSAxNS4xNzJzMTUuMTcyIDIyLjg4NyAxNS4xNzIgMzYuNjI1LTUuNDU3IDI2LjkxNC0xNS4xNzIgMzYuNjI5Yy05LjcxNDggOS43MTA5LTIyLjg5MSAxNS4xNzItMzYuNjI5IDE1LjE3MnoiLz4KIDwvZz4KPC9zdmc+Cg==" />
+    </div>
+    <div id="no-mobile">
+        <span>Your screen is too big. Please make it smaller!</span>
+    </div>
+    <script
+        src="https://kit.fontawesome.com/6478f529f2.js"
+        crossorigin="anonymous"
+    ></script>
+</body>
 </html>
